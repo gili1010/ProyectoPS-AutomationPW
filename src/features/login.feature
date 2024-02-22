@@ -8,7 +8,7 @@ Given vamos a DemoGuru
 When completamos "admin" y "admin" correcta
 Then nos permite el ingreso al panel y nos da mensaje de biemvenida
 
-@nuevo
+@nuevo1
 Scenario: 02-Ingresar a DemoGuru con usuario y contraseña Incorrecta
 Given vamos a DemoGuru Home
 When completamos "fghfdhgf" y "fghfdhgf" incorrecta

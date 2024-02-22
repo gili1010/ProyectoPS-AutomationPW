@@ -1,7 +1,11 @@
 // @ts-check
-const { defineConfig, devices } = require('@playwright/test');
+const { devices } = require('@playwright/test');
+const dotenv = require('dotenv');
+// Cargar variables de entorno del archivo .env
+dotenv.config();
 
 module.exports = {
+    
     projects: [
         {
             name: 'chromium',
@@ -34,3 +38,4 @@ module.exports = {
         ]
     }
 };
+

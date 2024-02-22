@@ -1,4 +1,7 @@
 import { LaunchOptions, chromium, firefox, webkit } from "@playwright/test";
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 const options: LaunchOptions = {
     headless: !true,
