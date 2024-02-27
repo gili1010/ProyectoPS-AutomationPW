@@ -1,0 +1,30 @@
+{
+  "name": "pw-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --config=config/cucumber.js --format ./reporter.js",
+    "report": "allure generate allure-results -o allure-report --clean",
+    "reporte": "set REPORT_DIR=allure-reports-%DATE:~10,4%%DATE:~4,2%%DATE:~7,2%-%TIME:~0,2%%TIME:~3,2%%TIME:~6,2% && allure generate allure-results -o %REPORT_DIR% --clean",
+    "open": "allure open allure-report",
+    "cucumber": "cucumber-js --config=config/cucumber.js",
+    "code": "npx playwright codegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/test": "^1.41.1",
+    "@types/node": "^20.11.5",
+    "allure-cucumberjs": "^2.11.1",
+    "allure-js-commons": "^2.11.1",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "allure-playwright": "^2.11.1",
+    "date-fns": "^3.3.1"
+  }
+}

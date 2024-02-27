@@ -50,5 +50,5 @@ Before(async () => {
     await browser.close();
   });
   
-  // Exporta la variable page 
+  // Exporta la variable page al final del archivo
 export { page, homeDemoGuruPage };

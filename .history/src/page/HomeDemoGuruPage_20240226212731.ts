@@ -1,5 +1,6 @@
 import { Locators } from '../locators/locators';
 import { BasePage } from './basePage';
+
 import EnvironmentConfig from '../../config/ambiente';
 
 // Obtén la URL del entorno
@@ -13,7 +14,7 @@ export class HomeDemoGuruPage extends BasePage {
 
     //ir a la web
     async irAPage(): Promise<void> {
-        await this.gotoPage(url,40000);
+        await this.gotoPage("https://demo.guru99.com/test/newtours/",40000);
     }
 
     // Iniciar sesion en DemoGuru

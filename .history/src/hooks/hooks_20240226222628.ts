@@ -27,18 +27,20 @@ const httpCredentials = {
 Before(async () => {
     browser = await invokeBrowser();
 
-    if (process.env.npm_config_VIDEO === 'TRUE') {
+    const recordVideoConfig = process.env.npm_config_VIDEO === 'TRUE'
+        ? {
+            dir: `videos/${formattedDate}/`,
+            size: { width: 800, height: 600 }
+          }
+        : {
+          dir: '',
+          size: { width: 0, height: 0 }
+        };
+
     context = await browser.newContext({
       ignoreHTTPSErrors: true,
-      recordVideo:{
-        dir: `videos/${formattedDate}/`,
-        size: { width: 800, height: 600 }
-  }})
-    }else{
-      context = await browser.newContext({
-        ignoreHTTPSErrors: true,
-    });
-}
+      recordVideo:recordVideoConfig   
+  });
     page = await context.newPage();
     homeDemoGuruPage = new HomeDemoGuruPage(page, context);
     await context.setHTTPCredentials(httpCredentials);
@@ -50,5 +52,5 @@ Before(async () => {
     await browser.close();
   });
   
-  // Exporta la variable page 
+  // Exporta la variable page al final del archivo
 export { page, homeDemoGuruPage };

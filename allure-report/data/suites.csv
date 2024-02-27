@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Feb 15 14:22:37 ART 2024","Thu Feb 15 14:22:45 ART 2024","7991","","02-Ingresar a DemoGuru con usuario y contraseña Incorrecta","","","","02-Ingresar a DemoGuru con usuario y contraseña Incorrecta",""
 "passed","Thu Feb 15 14:22:29 ART 2024","Thu Feb 15 14:22:37 ART 2024","8095","","01-Ingresar a DemoGuru con usuario y contraseña correcta","","","","01-Ingresar a DemoGuru con usuario y contraseña correcta",""
+"passed","Mon Feb 26 22:50:01 ART 2024","Mon Feb 26 22:50:08 ART 2024","7554","","02-Ingresar a DemoGuru con usuario y contraseña Incorrecta","","","","02-Ingresar a DemoGuru con usuario y contraseña Incorrecta",""

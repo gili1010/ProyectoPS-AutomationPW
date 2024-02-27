@@ -28,16 +28,23 @@ Before(async () => {
     browser = await invokeBrowser();
 
     if (process.env.npm_config_VIDEO === 'TRUE') {
+        recordVideoConfig = {
+            dir: `videos/${formattedDate}/`,
+            size: { width: 800, height: 600 }
+        };
+    } 
+
+    if (process.env.npm_config_VIDEO === 'TRUE') {
     context = await browser.newContext({
       ignoreHTTPSErrors: true,
       recordVideo:{
         dir: `videos/${formattedDate}/`,
         size: { width: 800, height: 600 }
   }})
-    }else{
-      context = await browser.newContext({
-        ignoreHTTPSErrors: true,
-    });
+}else{
+  context = await browser.newContext({
+    ignoreHTTPSErrors: true,
+});
 }
     page = await context.newPage();
     homeDemoGuruPage = new HomeDemoGuruPage(page, context);
@@ -50,5 +57,5 @@ Before(async () => {
     await browser.close();
   });
   
-  // Exporta la variable page 
+  // Exporta la variable page al final del archivo
 export { page, homeDemoGuruPage };

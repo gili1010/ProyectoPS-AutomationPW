@@ -11,12 +11,14 @@ dotenv.config();
 let browser: Browser;
 let context: BrowserContext;
 let page: Page;
-let homeDemoGuruPage: HomeDemoGuruPage; 
+let homeDemoGuruPage: HomeDemoGuruPage;
+let recordVideoConfig;
 
 
 //Fecha del dia para guardar los videos
 const today = new Date();
 const formattedDate = format(today, 'dd-MM-yy');
+
 
 // Agrega las credenciales HTTP aquí
 const httpCredentials = {
@@ -27,18 +29,18 @@ const httpCredentials = {
 Before(async () => {
     browser = await invokeBrowser();
 
-    if (process.env.npm_config_VIDEO === 'TRUE') {
+// Verifica si la variable de entorno npm_config_VIDEO está configurada como TRUE
+if (process.env.npm_config_VIDEO === 'TRUE') {
+  recordVideoConfig = {
+      dir: `videos/${formattedDate}/`,
+      size: { width: 800, height: 600 }
+  };
+}
+
     context = await browser.newContext({
       ignoreHTTPSErrors: true,
-      recordVideo:{
-        dir: `videos/${formattedDate}/`,
-        size: { width: 800, height: 600 }
-  }})
-    }else{
-      context = await browser.newContext({
-        ignoreHTTPSErrors: true,
-    });
-}
+      recordVideo: recordVideoConfig  
+  });
     page = await context.newPage();
     homeDemoGuruPage = new HomeDemoGuruPage(page, context);
     await context.setHTTPCredentials(httpCredentials);
@@ -50,5 +52,5 @@ Before(async () => {
     await browser.close();
   });
   
-  // Exporta la variable page 
+  // Exporta la variable page al final del archivo
 export { page, homeDemoGuruPage };
