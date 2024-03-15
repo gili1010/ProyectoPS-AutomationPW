@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js --config=config/cucumber.js --format ./reporter.js",
-    "report": "allure generate allure-results -o allure-report --clean",
+    "reporte": "allure generate allure-results -o allure-report --clean",
     "open": "allure open allure-report",
     "cucumber": "cucumber-js --config=config/cucumber.js",
-    "code": "npx playwright codegen"
+    "code": "npx playwright codegen",
+    "report" : "node ./config/run-report.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "@cucumber/cucumber": "^10.3.1",
     "@playwright/test": "^1.41.1",
     "@types/node": "^20.11.5",
+    "allure-commandline": "^2.27.0",
     "allure-cucumberjs": "^2.11.1",
     "allure-js-commons": "^2.11.1",
     "dotenv": "^16.4.5",
@@ -24,6 +26,7 @@
   },
   "dependencies": {
     "allure-playwright": "^2.11.1",
-    "date-fns": "^3.3.1"
+    "date-fns": "^3.3.1",
+    "xlsx": "^0.18.5"
   }
 }

@@ -2,6 +2,8 @@ import { LaunchOptions, chromium, firefox, webkit } from "@playwright/test";
 import dotenv from 'dotenv';
 dotenv.config();
 
+// Ruta a la carpeta de descargas
+const downloadsFolder = './downloads';
 
 const options: LaunchOptions = {
     headless: !true,

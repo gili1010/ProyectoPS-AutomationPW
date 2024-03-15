@@ -30,7 +30,8 @@ module.exports = {
             "src/features/"
         ],
         require: [
-            "src/test/steps/*.ts",
+            "src/test/steps/Haberes/*.ts",
+            "src/test/steps/Nominas/*.ts",
             "src/hooks/hooks.ts"
         ],
         requireModule: [
