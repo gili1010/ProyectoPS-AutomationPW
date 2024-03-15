@@ -1,35 +1,15 @@
 export class Locators {
     
 /*===================================================================================*/
-/*===================================Login===========================================*/
+/*====================================Home===========================================*/
 /*===================================================================================*/
 
-static readonly UserNameLocator: string = 'input[id="identification"]';
-static readonly PassLocator: string = 'input[id="password"]';
-static readonly SubmitButton: string = '//button[@id="btn_ingresar"]';
+    static readonly UserNameLocator: string = 'input[name="userName"]';
+    static readonly PassLocator: string = 'input[name="password"]';
+    static readonly SubmitButton: string = '//input[@name="submit"]';
 
 /*===================================================================================*/
-/*===================================Menu============================================*/
-/*===================================================================================*/
-
-//Pagos y transferencias
-static readonly PagosYtransf: string = '//li[@id="menu-pagos-y-transferencias"]';
-
-static readonly MfeAltaCuentaSueldo: string = '//a[@id="ember633" and text()="Alta de Cuenta Sueldo ¡Nuevo!"]';
-
-static readonly MfeMedianteArchivo: string = '//a[contains(text(),"Mediante archivo")]';
-
-/*===================================================================================*/
-/*=================================Nominas===========================================*/
-/*===================================================================================*/
-
-/* Alta Nomina */
-static readonly SelSucursal: string = '//select[@id="selector-sucursales"]';
-static readonly ValidarCarga: string = '//button[@id="btnCargarLote"]';
-
-
-/*===================================================================================*/
-/*=================================Haberes===========================================*/
+/*===================================REGISTER========================================*/
 /*===================================================================================*/
 
 

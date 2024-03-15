@@ -4,14 +4,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 class EnvironmentConfig {
-    private static readonly TESTING_URL: string = 'https://empresastst.supervielle.com.ar/obe/login';
-    private static readonly DESA_URL: string = 'http://obe-demo.gscorp.ad:8008/obe/login';
+    private static readonly TESTING_URL: string = 'https://demo.guru99.com/test/newtours/';
+    private static readonly DESA_URL: string = 'https://demo.guru99.com/test/newtours/';
 
-    private static readonly TESTING_USER: string = 'usuariodiaPS';
-    private static readonly TESTING_PASSWORD: string = 'Info1010';
+    private static readonly TESTING_USER: string = 'usuario';
+    private static readonly TESTING_PASSWORD: string = 'pass';
 
-    private static readonly DESA_USER: string = 'Gaston082';
-    private static readonly DESA_PASSWORD: string = 'Info1010';
+    private static readonly DESA_USER: string = 'usuario';
+    private static readonly DESA_PASSWORD: string = 'pass';
 
     // Método estático para obtener la URL en función de la variable de entorno
     public static getUrl(): {url: string, user: string, password: string } {

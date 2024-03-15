@@ -3,8 +3,7 @@ import { Page, Browser, BrowserContext } from '@playwright/test' ;
 import { invokeBrowser } from '../../Browser/browserManager';
 const { format } = require('date-fns');
 import dotenv from 'dotenv';
-import { NominasPage } from '../page/NominasPage';
-import { HaberesPage } from '../page/HaberesPage';
+import { HomeDemoGuruPage } from '../page/HomeDemoGuruPage';
 
 // Carga las variables de entorno desde el archivo .env
 dotenv.config();
@@ -12,8 +11,7 @@ dotenv.config();
 let browser: Browser;
 let context: BrowserContext;
 let page: Page;
-let nominasPage : NominasPage;
-let haberesPage : HaberesPage;
+let homeDemoGuruPage : HomeDemoGuruPage;
 
 //Fecha del dia para guardar los videos
 const today = new Date();
@@ -21,8 +19,8 @@ const formattedDate = format(today, 'dd-MM-yy');
 
 // Agrega las credenciales HTTP aquí
 const httpCredentials = {
-  username: 'LG85704',
-  password: 'Teclado01',
+  username: 'user',
+  password: 'pass',
 };
 
 Before(async () => {
@@ -43,8 +41,7 @@ Before(async () => {
     });
 }
     page = await context.newPage();
-    nominasPage = new NominasPage(page, context);
-    haberesPage = new HaberesPage(page, context);
+    homeDemoGuruPage = new HomeDemoGuruPage(page, context);
     await context.setHTTPCredentials(httpCredentials);
   });
 
@@ -55,4 +52,4 @@ Before(async () => {
   });
   
   // Exporta la variable page 
-export { page, nominasPage, haberesPage };
+export { page , homeDemoGuruPage };
