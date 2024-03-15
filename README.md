@@ -1,23 +1,5 @@
 # Automation Framework PLAYWRIGHT-CUCUMBER-ALLURE
 
-# Table of content
-
-You will find the following info on this README:
-
-- About the project
-- Upcoming features
-- Build with
-- Recommendations
-- Project structure
-- Getting started
-- Prerequisites
-- Installation
-- Configuration
-- Commands
-- Reporting
-- Lighthouse
-- Docker
-
 ## Sobre el proyecto
 
 El proyecto esta basado en Microsoft Playwright para end-to-end testing. Se implemento con cucumber y report allure. 
