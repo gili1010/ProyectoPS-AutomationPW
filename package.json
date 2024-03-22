@@ -9,7 +9,7 @@
     "open": "allure open allure-report",
     "cucumber": "cucumber-js --config=config/cucumber.js",
     "code": "npx playwright codegen",
-    "report" : "node ./config/run-report.ts"
+    "report": "node ./config/run-report.ts"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "allure-playwright": "^2.11.1",
+    "axios": "^1.6.8",
     "date-fns": "^3.3.1",
     "xlsx": "^0.18.5"
   }

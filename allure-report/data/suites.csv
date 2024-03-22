@@ -1,2 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Mar 22 13:15:52 ART 2024","Fri Mar 22 13:15:53 ART 2024","1394","","Api-Nominas","","","","01-consultar Pokemon",""
 "passed","Fri Mar 15 16:50:07 ART 2024","Fri Mar 15 16:51:17 ART 2024","70222","","Haberes","","","","19- MFE pago a otros bancos con monto y con cero",""

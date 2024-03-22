@@ -32,6 +32,7 @@ module.exports = {
         require: [
             "src/test/steps/*.ts",
             "src/test/steps/*.ts",
+            "src/test/steps/apis/*.ts",
             "src/hooks/hooks.ts"
         ],
         requireModule: [

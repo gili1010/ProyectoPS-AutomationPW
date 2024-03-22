@@ -1,1 +1,1 @@
-[{"uid":"5fe5ed66da2f82bb","name":"19- MFE pago a otros bancos con monto y con cero","time":{"start":1710532207295,"stop":1710532277517,"duration":70222},"status":"passed","severity":"normal"}]
+[{"uid":"2770ab3c8301762a","name":"01-consultar Pokemon","time":{"start":1711124152282,"stop":1711124153676,"duration":1394},"status":"passed","severity":"normal"},{"uid":"856fe713b25ca784","name":"19- MFE pago a otros bancos con monto y con cero","time":{"start":1710532207295,"stop":1710532277517,"duration":70222},"status":"passed","severity":"normal"}]
