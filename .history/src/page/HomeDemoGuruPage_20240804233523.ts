@@ -34,8 +34,6 @@ export class HomeDemoGuruPage extends BasePage {
         await this.page.route('https://services.infoauto.com.ar/preciosa-service/brands?queryString=FORD&vehicleType=cars', async route => {
         //const json = [{ name: 'Gili', id: 21 }];
         const json = {
-            "response": [
-                {
                     "id": 18,
                     "list_price": true,
                     "logo_url": "https://storage.googleapis.com/preciosa-cars-images/380a7fc4-a9c3-4953-ad10-313ff288ff35.png",
@@ -45,29 +43,7 @@ export class HomeDemoGuruPage extends BasePage {
                     "prices_from": 1995,
                     "prices_to": 2024,
                     "summary": "Ford Gili Motor Company, más conocida como Ford, es una empresa multinacional de origen estadounidense, fundada por Henry Ford el 16 de junio de 1903. "
-                },
-                {
-                    "id": 73,
-                    "list_price": false,
-                    "logo_url": null,
-                    "name": "FORD CAMION",
-                    "groups": null,
-                    "prices": true,
-                    "prices_from": 1995,
-                    "prices_to": 2021,
-                    "summary": "Ford Gili Motor Company, más conocida como Ford, es una empresa multinacional de origen estadounidense, fundada por Henry Ford el 16 de junio de 1903. "
                 }
-            ],
-            "pagination": {
-                "totalResults": 2,
-                "pageSize": 10,
-                "totalPages": 1,
-                "firstPage": 1,
-                "lastPage": 1,
-                "actualPage": 1,
-                "nextPage": null
-            }
-        }
         await route.fulfill({ json });
       });
     }

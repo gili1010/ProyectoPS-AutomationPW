@@ -44,7 +44,7 @@ export class HomeDemoGuruPage extends BasePage {
                     "prices": true,
                     "prices_from": 1995,
                     "prices_to": 2024,
-                    "summary": "Ford Gili Motor Company, más conocida como Ford, es una empresa multinacional de origen estadounidense, fundada por Henry Ford el 16 de junio de 1903. "
+                    "summary": "Ford Motor Company, más conocida como Ford, es una empresa multinacional de origen estadounidense, fundada por Henry Ford el 16 de junio de 1903. "
                 },
                 {
                     "id": 73,
@@ -55,7 +55,7 @@ export class HomeDemoGuruPage extends BasePage {
                     "prices": true,
                     "prices_from": 1995,
                     "prices_to": 2021,
-                    "summary": "Ford Gili Motor Company, más conocida como Ford, es una empresa multinacional de origen estadounidense, fundada por Henry Ford el 16 de junio de 1903. "
+                    "summary": "Ford Motor Company, más conocida como Ford, es una empresa multinacional de origen estadounidense, fundada por Henry Ford el 16 de junio de 1903. "
                 }
             ],
             "pagination": {
