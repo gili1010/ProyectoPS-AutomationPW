@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<testsuite failures="0" skipped="0" name="cucumber-js" time="7.223277998" tests="1">
+  <testcase classname="Pruebas" name="01-Ingresar a DemoGuru con usuario y contraseña correcta" time="7.223277998">
+    <system-out><![CDATA[Given vamos a DemoGuru....................................................passed
+When completamos "admin" y "admin" correcta...............................passed
+Then nos permite el ingreso al panel y nos da mensaje de biemvenida.......passed]]></system-out>
+  </testcase>
+</testsuite>

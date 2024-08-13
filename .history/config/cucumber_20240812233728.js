@@ -26,8 +26,7 @@ module.exports = {
         formatOptions: {
             snippetInterface: "async-await"
         },
-        format: ['json:./cucumber-report.json','junit:./reports/cucumber-report.xml'],
-        
+        format: ['json:./cucumber-report.json'],
         paths: [
             "src/features/"
         ],
